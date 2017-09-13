@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>手机信息展示</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>手机名</th>
+                <th>上市时间</th>
+                <th>触屏类型</th>
+                <th>屏幕尺寸</th>
+                <th>操作系统</th>
+                <th>核心数</th>
+                <th>CPU型号</th>
+                <th>CPU频率</th>
+                <th>内存</th>
+                <th>存储</th>
+                <th>感应器类型</th>
+            </tr>
+        </thead>
+        {% for mobile in mobiles %}
+        <tbody>
+            <tr>mobile.model_name</tr>
+            <tr>mobile.market_time</tr>
+            <tr>mobile.touch_screen_type</tr>
+            <tr>mobile.screen_szie</tr>
+            <tr>mobile.os</tr>
+            <tr>mobile.cpu_count</tr>
+            <tr>mobile.cpu_type</tr>
+            <tr>mobile.cpu_rate</tr>
+            <tr>mobile.ram</tr>
+            <tr>mobile.rom</tr>
+            <tr>mobile.sensor_type</tr>
+        </tbody>
+        {% endfor %}
+    </table>
+
+</body>
+</html>
